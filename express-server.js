@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 
 
 module.exports = (PORT) => {
-  
+
   const dataFile = path.join(__dirname, 'src/data/data.json');
   const app = express();
 
@@ -27,7 +27,7 @@ module.exports = (PORT) => {
     next();
   });
 
-  // Here it read the api content
+  // GET
   app.get('/api', function (req, res) {
     fs.readFile(dataFile, function (err, data) {
       if (err) {
@@ -38,7 +38,7 @@ module.exports = (PORT) => {
     });
   });
 
-  // Here it write on api
+  // POST
   app.post('/api', function (req, res) {
     fs.readFile(dataFile, function (err, data) {
       if (err) {
@@ -64,9 +64,9 @@ module.exports = (PORT) => {
     });
   });
 
-  // Finally listen to the port
+  // Listen to the port
   app.listen(PORT, function (err) {
-    if (err) { 
+    if (err) {
       console.log(err);
       return;
     }

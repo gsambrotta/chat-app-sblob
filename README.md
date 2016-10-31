@@ -1,10 +1,9 @@
-# react-starter-kit
-React starter-kit with express, webpack and sass
+# Chat app sblob
 
 To run it:
 
 ```
-npm install 
+npm install
 npm start
 
 ```
