@@ -7,12 +7,11 @@
     "start": "node server.js",
     "lint": "npm run lint:node && npm run lint:module",
     "lint:node": "eslint --config=./.eslintrc *.js scripts/*.js",
-    "lint:module": "eslint --config=./.eslintrc src/**/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:module": "eslint --config=./.eslintrc src/**/**/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/gsambrotta/"
+    "url": "github.com/gsambrotta/chat-app-sblob"
   },
   "keywords": [
     "react",
