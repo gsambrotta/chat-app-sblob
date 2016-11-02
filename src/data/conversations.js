@@ -1,11 +1,11 @@
 import contacts from './contacts';
-const mySelf = 'me';
+const mySelf = contacts[0];
 
 const conversations = [
   {
-    id: 1,
-    participants: [contacts[2], mySelf],
-    conversations: [
+    id: 0,
+    participants: [contacts[2], mySelf, contacts[3]],
+    chat: [
       {
         sender: mySelf,
         messages: [
@@ -23,21 +23,30 @@ const conversations = [
         sender: contacts[2],
         messages: [
           {
-            body: 'Where are you?',
+            body: 'Beautiful song!',
             date: '19/03/2016 20:17'
           },
           {
-            body: 'see you later',
+            body: 'Anybody online?',
             date: '09/04/2016 08:45'
+          }
+        ]
+      },
+      {
+        sender: contacts[3],
+        messages: [
+          {
+            body: 'Lalalala',
+            date: '19/03/2016 20:17'
           }
         ]
       }
     ]
   },
   {
-    id: 2,
+    id: 1,
     participants: [contacts[1], mySelf],
-    conversations: [
+    chat: [
       {
         sender: contacts[1],
         messages: [

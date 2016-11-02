@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-import { getConversations } from './../utility';
+import { getConversations } from './../../utility';
 import ConversationPreview from './ConversationPreview';
 
 

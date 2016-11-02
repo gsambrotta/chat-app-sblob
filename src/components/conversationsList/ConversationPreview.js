@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-import Avatar from './common/Avatar';
-import '../sass/components/_conversationPreview.scss';
+import Avatar from '../common/Avatar';
+import '../../sass/components/_conversationPreview.scss';
 
 
 const ConversationPreview = (props) => {
