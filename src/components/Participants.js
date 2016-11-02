@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import Avatar from './common/Avatar';
 
 const Participants = ({participants}) => {
@@ -10,10 +10,10 @@ const Participants = ({participants}) => {
   return (
     <header>
       <p> To: </p>
-      <div id='addContact'>
+      <div id='addContact' className='header__avatars'>
        {avatar}
       </div>
-      <span> + </span>
+      <span className='u-circle-outside'> + </span>
     </header>
   );
 };

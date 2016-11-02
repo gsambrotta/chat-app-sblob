@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 import Participants from './Participants';
 import MessagesHistory from './MessagesHistory';

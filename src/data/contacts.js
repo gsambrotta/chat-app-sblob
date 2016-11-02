@@ -21,6 +21,6 @@ export default [
     id: 3,
     name: 'Eric Branca',
     image: 'https://s3.amazonaws.com/uifaces/faces/twitter/soyjavi/128.jpg',
-    isOnline: true
+    isOnline: false
   }
 ];

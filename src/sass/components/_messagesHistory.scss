@@ -1,0 +1,26 @@
+.list-items__messages {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	height: 81px;
+
+	.avatar {
+		flex: 0;
+
+		img {
+			height: 80px;
+			width: 60px;
+		}
+	}
+
+	.list-items__text {
+		flex: 2;
+		display: flex;
+    align-items: center;
+    margin-left: 10px;
+	}
+
+	p.list-items__text {
+		justify-content: flex-end;
+	}
+}

@@ -1,26 +1,35 @@
-import React from 'React';
+import React from 'react';
 import moment from 'moment';
 
 import Avatar from './common/Avatar';
+import '../sass/components/_messagesHistory.scss';
 
 const MessagesHistory = ({sender, history}) => {
 
   let messageBlock = history.map(message => {
     let formattedDate = moment(message.date, 'DD/MM/YYYY hh:mm').fromNow();
+
+
     return (
-      <li key={message.date} className='list-items list-items__conversation'>
+      <div key={message.date} className='u-list-items list-items__messages'>
         <Avatar image={sender.image} />
-        <span>{sender.isOnline}</span>
-        <p> {message.body} </p>
-        <span> {formattedDate} </span>
-      </li>
+        <div className='list-items__text'>
+          <ul>
+            <li><h3>{sender.name}
+              <span className={sender.isOnline ? 'u-circle u-circle--green' : 'u-circle u-circle--grey'} />
+            </h3></li>
+            <li><p> {message.body} </p></li>
+          </ul>
+        </div>
+        <p className='list-items__text'> {formattedDate} </p>
+      </div>
     );
   });
 
   return (
-    <ul>
+    <div className='messages__list'>
       {messageBlock}
-    </ul>
+    </div>
   );
 }
 

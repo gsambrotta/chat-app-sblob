@@ -1,15 +1,40 @@
 //----------//
 
 // 01_ List
+// 02_ Shapes
 
 //----------//
 
 
 // 01_ List
 .u-list-items {
-  padding: 30px 10px 0;
+  padding: 20px 0;
+}
 
-  span {
-    float: right;
-  }
+// 02_ Shapes
+.u-circle {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: block;
+	float: right;
+	margin-left: 10px;
+  margin-top: 8px;
+
+	&--green {
+		background: $green;
+	}
+
+	&--grey {
+		background: $grey;
+	}
+}
+
+.u-circle-outside {
+  width: 16px;
+  height: 20px;
+  border: 1px solid $border-grey;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-bottom: 1px;
 }

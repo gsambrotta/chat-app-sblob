@@ -1,6 +1,8 @@
 /* global document */
 import React from 'react';
 
+import '../sass/components/_form.scss';
+
 export default class Footer extends React.Component {
   constructor(props) {
     super();
